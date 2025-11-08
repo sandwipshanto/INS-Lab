@@ -1,0 +1,21 @@
+
+echo "This is a test message for encryption lab. Symmetric encryption is fun!" > plain.txt
+
+ KEY=00112233445566778899aabbccddeeff
+
+IV=0102030405060708090a0b0c0d0e0f10
+
+openssl enc -aes-128-cbc -e -in plain.txt -out enc_cbc.bin -K $KEY -iv $IV
+
+openssl enc -aes-128-ecb -e -in plain.txt -out enc_ecb.bin -K 00112233445566778899aabbccddeeff
+
+
+openssl enc -aes-128-ecb -e -in plain.txt -out enc_ecb.bin -K $KEY
+
+openssl enc -aes-128-cfb -e -in plain.txt -out enc_cfb.bin -K $KEY -iv $IV
+
+openssl enc -aes-128-cbc -d -in enc_cbc.bin -out dec_cbc.txt -K $KEY -iv $IV
+
+openssl enc -aes-128-ecb -d -in enc_ecb.bin -out dec_ecb.txt -K $KEY
+
+openssl enc -aes-128-cfb -d -in enc_cfb.bin -out dec_cfb.txt -K $KEY -iv $IV

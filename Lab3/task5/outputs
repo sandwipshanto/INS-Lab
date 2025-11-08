@@ -1,0 +1,7 @@
+MD5(digest_test.txt)= 918af5c8e58dfffc462ff9ab7e98edba
+
+SHA1(digest_test.txt)= 620483a2d5401425c55e30392e5581476350cbdd
+
+SHA2-256(digest_test.txt)= af65e0d9d60b7134cc7f8284f969d4a5d3f7c20ade4c253c0672b8a031b16bb3
+
+SHA2-512(digest_test.txt)= 16aaa1a848cb865bfc00a1cc7fd63a046413fdcb1d33f2e7c7954519474bcbac9c732e14fe0720b70388b88c7bcbe701ce7eac0e73358f74ea24d2dba8e667bd

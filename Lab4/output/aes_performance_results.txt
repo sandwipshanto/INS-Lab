@@ -1,0 +1,26 @@
+AES Performance Test Results
+============================================================
+
+Algorithm: AES-128-ECB
+Key Size: 128 bits
+Mode: ECB
+Encryption Time: 0.001917 seconds
+Decryption Time: 0.016095 seconds
+
+Algorithm: AES-128-CFB
+Key Size: 128 bits
+Mode: CFB
+Encryption Time: 0.001697 seconds
+Decryption Time: 0.012071 seconds
+
+Algorithm: AES-256-ECB
+Key Size: 256 bits
+Mode: ECB
+Encryption Time: 0.001219 seconds
+Decryption Time: 0.018215 seconds
+
+Algorithm: AES-256-CFB
+Key Size: 256 bits
+Mode: CFB
+Encryption Time: 0.001444 seconds
+Decryption Time: 0.011070 seconds

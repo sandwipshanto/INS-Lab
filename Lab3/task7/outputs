@@ -1,0 +1,7 @@
+Before bit flipping:
+  MD5(hash_randomness.txt)= cf4ed8951e1e01877ffc2441eab7e10d
+  SHA2-256(hash_randomness.txt)= e352aaa46e3eeed01aee7890d45b0f260245120f9c9e7b685e6858c050daf955
+
+After bit flipping:
+  MD5(hash_randomness.txt)= a7b82cc955ebf8204aeefa99eee2e857
+  SHA2-256(hash_randomness.txt)= 696571486791a7aa97e1db33e9053345e45e1b0847d5b24d2615bf83ba14be12

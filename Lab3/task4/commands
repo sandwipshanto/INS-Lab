@@ -1,0 +1,19 @@
+echo "Hello World" > test_padding.txt
+
+ls -l test_padding.txt
+
+openssl enc -aes-128-ecb -e -in test_padding.txt -out ecb_encrypted.bin -K $KEY
+
+ls -l ecb_encrypted.bin
+
+openssl enc -aes-128-cbc -e -in test_padding.txt -out cbc_encrypted.bin -K $KEY -iv $IV
+
+ls -l cbc_encrypted.bin
+
+openssl enc -aes-128-cfb -e -in test_padding.txt -out cfb_encrypted.bin -K $KEY -iv $IV
+
+ls -l cfb_encrypted.bin
+
+openssl enc -aes-128-ofb -e -in test_padding.txt -out ofb_encrypted.bin -K $KEY -iv $IV
+
+ls -l ofb_encrypted.bin

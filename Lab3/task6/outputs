@@ -1,0 +1,18 @@
+abc : 
+
+HMAC-MD5(hmac_test.txt)= 13249346bb2308b1592cee8ba5560b96
+HMAC-SHA2-256(hmac_test.txt)= 69fe6e7d694908bf43dd97151b9ee4d2e522846726f21d745e370445e1487dfc
+HMAC-SHA1(hmac_test.txt)= 0450cbb0b8bb19ceb300e0d8b54e71c8b4b90498
+
+mySecretKey123:
+
+HMAC-MD5(hmac_test.txt)= 9187b32b6d402741b86f1e57e8c6c8d1
+HMAC-SHA2-256(hmac_test.txt)= c63faa794e923b2ed69982127bf260416eabd9b55287eb3fa74ceeb7b98b899b
+HMAC-SHA1(hmac_test.txt)= 26b268c63479bf197f70cdb7f9c4570d3d5f1aae
+
+
+thisIsAVeryLongSecretKeyForHMACGeneration:
+
+HMAC-MD5(hmac_test.txt)= ddca74c5e22f1c36637b36ca4209a252
+HMAC-SHA2-256(hmac_test.txt)= 00551dcb0fe2f4a5474197c1eb5892e8df77fb34fd5621194db9df84df7d7597
+HMAC-SHA1(hmac_test.txt)= 01010a6f84855511abc8ccf92cc016323e96f11c

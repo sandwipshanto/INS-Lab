@@ -1,0 +1,11 @@
+gedit hash_randomness.txt
+
+openssl dgst -md5 hash_randomness.txt
+
+openssl dgst -sha256 hash_randomness.txt
+
+ghex hash_randomness.txt &
+
+openssl dgst -md5 hash_randomness.txt
+
+openssl dgst -sha256 hash_randomness.txt

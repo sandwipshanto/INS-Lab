@@ -1,0 +1,18 @@
+wget https://github.com/ashutosh1206/Cryptography/blob/master/AES-Image-Encryption/test.bmp?raw=true -O original.bmp
+
+head -c 54 original.bmp > header.bmp
+tail -c +55 original.bmp > body.bin
+
+KEY=00112233445566778899aabbccddeeff
+ID=0102030405060708090a0b0c0d0e0f10
+
+openssl enc -aes-128-ecb -e -in body.bin -out enc_ecb.bin -K 00112233445566778899aabbccddeeff -nosalt
+
+openssl enc -aes-128-cbc -e -in body.bin -out enc_cbc.bin -K 00112233445566778899aabbccddeeff -iv 0102030405060708 -nosalt
+
+cat header.bmp enc_ecb.bin > enc_ecb.bmp
+cat header.bmp enc_cbc.bin > enc_cbc.bmp
+
+eog enc_ecb.bmp
+eog enc_cbc.bmp
+

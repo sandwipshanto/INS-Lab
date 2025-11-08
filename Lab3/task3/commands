@@ -1,0 +1,19 @@
+openssl enc -aes-128-ecb -e -in plain.txt -out enc_ecb.bin -K $KEY -nosalt
+openssl enc -aes-128-cbc -e -in plain.txt -out enc_cbc.bin -K $KEY -iv $IV -nosalt
+openssl enc -aes-128-cfb -e -in plain.txt -out enc_cfb.bin -K $KEY -iv $IV -nosalt
+openssl enc -aes-128-ofb -e -in plain.txt -out enc_ofb.bin -K $KEY -iv $IV -nosalt
+  
+ghex enc_ecb.bin
+ghex enc_cbc.bin
+ghex enc_cfb.bin
+ghex enc_ofb.bin
+
+openssl enc -aes-128-ecb -d -in enc_ecb.bin -out dec_ecb_corrupted.txt -K $KEY -nosalt
+openssl enc -aes-128-cbc -d -in enc_cbc.bin -out dec_cbc_corrupted.txt -K $KEY -iv $IV -nosalt
+openssl enc -aes-128-cfb -d -in enc_cfb.bin -out dec_cfb_corrupted.txt -K $KEY -iv $IV -nosalt
+openssl enc -aes-128-ofb -d -in enc_ofb.bin -out dec_ofb_corrupted.txt -K $KEY -iv $IV -nosalt
+
+cat dec_ecb_corrupted.txt
+cat dec_cbc_corrupted.txt
+cat dec_cfb_corrupted.txt
+cat dec_ofb_corrupted.txt

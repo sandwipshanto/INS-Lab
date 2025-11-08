@@ -1,0 +1,14 @@
+gedit hmac_test.txt
+
+openssl dgst -md5 -hmac "abc" hmac_test.txt
+openssl dgst -md5 -hmac "mySecretKey123" hmac_test.txt
+openssl dgst -md5 -hmac "thisIsAVeryLongSecretKeyForHMACGeneration" hmac_test.txt
+
+openssl dgst -sha256 -hmac "abc" hmac_test.txt
+openssl dgst -sha256 -hmac "mySecretKey123" hmac_test.txt
+openssl dgst -sha256 -hmac "thisIsAVeryLongSecretKeyForHMACGeneration" hmac_test.txt
+
+openssl dgst -sha1 -hmac "abc" hmac_test.txt
+openssl dgst -sha1 -hmac "mySecretKey123" hmac_test.txt
+openssl dgst -sha1 -hmac "thisIsAVeryLongSecretKeyForHMACGeneration" hmac_test.txt
+

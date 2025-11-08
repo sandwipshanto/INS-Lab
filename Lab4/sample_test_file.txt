@@ -1,0 +1,7 @@
+This is a sample test file for cryptographic operations.
+It contains multiple lines of text to demonstrate:
+- RSA signing and verification
+- SHA-256 hashing
+- File-based encryption operations
+
+You can use this file to test the signature and hashing functionalities.

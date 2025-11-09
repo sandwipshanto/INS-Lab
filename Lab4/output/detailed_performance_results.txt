@@ -1,0 +1,25 @@
+DETAILED PERFORMANCE ANALYSIS RESULTS
+============================================================
+
+RSA Performance Results:
+------------------------------------------------------------
+
+Key Size: 1024 bits
+Encryption Time: 0.055096 seconds
+Decryption Time: 0.025781 seconds
+Signing Time: 0.027758 seconds
+
+Key Size: 2048 bits
+Encryption Time: 0.113921 seconds
+Decryption Time: 0.104535 seconds
+Signing Time: 0.087294 seconds
+
+Key Size: 3072 bits
+Encryption Time: 0.315713 seconds
+Decryption Time: 0.255247 seconds
+Signing Time: 0.257776 seconds
+
+Key Size: 4096 bits
+Encryption Time: 0.586030 seconds
+Decryption Time: 0.604389 seconds
+Signing Time: 0.610917 seconds

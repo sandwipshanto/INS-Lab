@@ -241,17 +241,6 @@ Hash output changes dramatically with even a single-bit change in input, confirm
 
 ---
 
-## Attachments  
-_(Attach all referenced files as required by lab manual: encrypted files, digests, images, etc. See links above for sources in repo.)_
-
----
-
-## References
-- [Lab3 folder on GitHub](https://github.com/sandwipshanto/INS-Lab/tree/83ae60b54a6f750f80eadd819e1cb4709b9668a7/Lab3)
-- OpenSSL documentation (`man openssl`, `man enc`, `man dgst`)
-- Hex Editor (GHex)
-- [Wikipedia: OpenSSL](https://en.wikipedia.org/wiki/OpenSSL)
-
 ---
 
 **End of Report**
